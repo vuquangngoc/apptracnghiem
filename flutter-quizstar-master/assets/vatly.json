@@ -89,17 +89,17 @@
         "87": "Một quang êlectron khi bay vào từ trường đều có cảm ứng từ B =10-4 theo phương vuông góc với các đường sức từ có bán kính quỹ đạo là 23,32 cm. Tốc độ của êlectron khi bay vào từ trường là",
         "88": "Trong quang phổ của nguyên tử hiđrô, nếu biết bước sóng λ₂₁ của bức xạ phát ra ứng với sự chuyển êlectron từ quỹ đạo L sang quỹ đạo K và bước sóng λ₃₂ của bức xạ phát ra ứng với sự chuyển êlectron từ quỹ đạo M sáng quỹ đạo K sẽ là",
         "89": "Một điện cực phẳng làm bằng kim loại có công thoát 3,2.10–¹⁹ (J) được chiếu bởi bức xạ photon có năng lượng 4,8.10–¹⁹ (J). Cho điện tích của electron là –1,6.10–¹⁹ (C). Hỏi electron quang điện có thể rời xa bề mặt một khoảng tối đa bao nhiêu nếu bên ngoài điện cực có một điện trường cản là 5 (V/m).",
-        "90": "",
-        "91": "",
-        "92": "",
-        "93": "",
-        "94": "",
-        "95": "",
-        "96": "",
-        "97": "",
-        "98": "",
-        "99": "",
-        "100": ""
+        "90": "Sự phóng xạ và hiện tượng phân hạch không có đặc điểm chung nào nêu dưới đây?",
+        "91": "Lực hạt nhân:",
+        "92": "Tìm phát biểu sai. So sánh hạt nhân của hai đồng vị Bài tập trắc nghiệm Vật Lí 12 | Câu hỏi trắc nghiệm Vật Lí 12 ta thấy chúng có:",
+        "93": "Hạt nào được bức xạ khi ³²P phân rã thành ³²P (nguyên tử số của P và S tương ứng là 15 và 16)",
+        "94": "Trong phản ứng hạt nhân có sự bảo toàn về:",
+        "95": "Phản ứng hạt nhân khác phản ứng hóa học ở chỗ:",
+        "96": "Hạt anpha có khối lượng 6,64.10²⁷ kg chuyển động tròn đều trong từ trường đều có cảm ứng từ B = 0,5T. Biết bán kính quỹ đạo là 0,5 m. Tốc độ của hạt là",
+        "97": "Hạt nhân X trong phản ứng X + α → n + ¹²C₆ là",
+        "98": "Biết khối lượng các hạt là : mp = 1,007276 u, mn = 1,008670 u, mα = 4,0015 u, 1 u = 930 MeV/c2. Năng lượng tỏa ra khi có 5,6 dm3 khí heli ở điều kiện chuẩn tạo thành từ các nuclôn là:",
+        "99": "Một mẫu đồng vị rađôn (²²²Rn) có chu kì bán rã là 3,8 ngày và có khối lượng ban đầu là m0. Sau 19 ngày, khối lượng chất này có độ phóng xạ 0,5 Ci. Khối lượng m₀ là:",
+        "100": "Lúc đầu, tỉ số khối lượng của chất phóng xạ A đối với B là 3 : 1. Nếu chu kì bán rã của chúng tương ứng là T và 4T/3 thì sau thời gian bằng 4T tỉ số khối lượng của A đối với B là:"
     },
     {"0": {
         "a": "Dao động duy trì có tần số bằng tần số riêng của hệ dao động.",
@@ -511,112 +511,112 @@
         "a": "Trong hiện tượng quang dẫn, điện trở của khối chất bán dẫn giảm khi khối bán dẫn được chiếu ánh sáng thích hợp.",
         "b": "Trong hiện tượng quang dẫn, các êlectron bị bứt ra khỏi liên kết với hạt nhân của khối chất bán dẫn nhưng vẫn nằm trong khối bán dẫn khi khối bán dẫn được chiếu ánh sáng.",
         "c": "Trong hiện tượng quang điện ngoài, độ dẫn điện của khối kim loại tăng khi khối kim loại được chiếu bằng ánh sáng thích hợp.",
-        "d": ""
+        "d": "Hiện tượng quang dẫn chỉ có thể xảy ra khi bước sóng của bức xạ kích thích nhỏ hơn một giá trị nào đó đối với mỗi chất bán dẫn"
     },"80": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Hiện tượng quang phát quang",
+        "b": "Hiện tượng phát xạ nhiệt điện từ",
+        "c": "Hiện tượng quang điện",
+        "d": "Hiện tượng phát quang phổ vạch"
     },"81": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Làm các êlectron bứt ra khỏi vật được chiếu sáng",
+        "b": "Làm cho điện trở vaạt giảm xuống khi vật được chiếu sáng",
+        "c": "Được ứng dụng để chế tạo pin quang điện",
+        "d": "Xảy ra khi bước sóng của ánh sáng kích thích nhỏ hơn hoặc bằng một bước sóng giới hạn nào đó."
     },"82": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Hiện tượng giao thoa ánh sáng",
+        "b": "Hiện tượng quang điện",
+        "c": "Hiện tượng nhiễu xạ ánh sáng",
+        "d": "Hiện tượng tán sắc ánh sáng"
     },"83": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Tế bào quang điện",
+        "b": "Máy quang phổ",
+        "c": "Điôt phát quang",
+        "d": "Quang điện trở"
     },"84": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Hiện tượng giao thoa ánh sáng chứng tỏ ánh sáng có tính chất sóng",
+        "b": "Hiện tượng quang điện chứng tỏ ánh sáng có tính chất hạt",
+        "c": "Photon ánh sáng không thể hiện tính chất sóng khi truyền trong chân không",
+        "d": "Photon ánh sáng luôn mang đồng thời cả tính chất sóng và tính chất hạt"
     },"85": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Vmax = V₁+V₂",
+        "b": "Vmax = V₁V₂/(V₁+V₂)",
+        "c": "Vmax = V₁",
+        "d": "Vmax = V₂"
     },"86": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Tỉ lệ thuận với n",
+        "b": "Tỉ lệ nghịch với n",
+        "c": "Tỉ lệ thuận với √n",
+        "d": "Tỉ lệ nghịch với √n"
     },"87": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "4,1.10⁶ m/s",
+        "b": "4,1.10⁵ m/s",
+        "c": "4,1.10⁵ mm/s",
+        "d": "6,2.10⁵ m/s"
     },"88": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "λ₃₁ = λ₃₂ + λ₂₁",
+        "b": "λ₃₁ = (λ₃₂ + λ₂₁)/2",
+        "c": "1/λ₃₁ = 1/λ₃₂ + 1/λ₂₁",
+        "d": "1/λ₃₁ = 1/λ₃₂ - 1/λ₂₁"
     },"89": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "0,2 m.",
+        "b": "0,4 m.",
+        "c": "0,1 m.",
+        "d": "0,3 m."
     },"90": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Đều là phản ứng tỏa năng lượng",
+        "b": "Không phụ thuộc vào các tác động bên ngoài",
+        "c": "Đều có thể phóng ra tia γ",
+        "d": "Không bảo toàn khối lượng"
     },"91": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Là lực liên kết các proton trong hạt nhân nguyên tử",
+        "b": "Là lực hấp dẫn giữa các nuclôn",
+        "c": "Là lực hút trong bán kinh tác dụng, lực đẩy khi ở ngoài bán kính tác dụng",
+        "d": "Chỉ phát huy tác dụng trong phạm vi kích thích thức hạt nhân"
     },"92": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Bán kính như nhau",
+        "b": "Cùng số proton",
+        "c": "Số nơtron hơn kém nhau là 3",
+        "d": "Số nuclôn hơn kém nhau là 3"
     },"93": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Gamma",
+        "b": "Êlectron",
+        "c": "Pôzitron",
+        "d": "Anpha"
     },"94": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Số nuclôn",
+        "b": "Số proton",
+        "c": "Số nơtron",
+        "d": "Khối lượng"
     },"95": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Có thể tỏa nhiệt hoặc thu nhiệt",
+        "b": "Không liên quan đến có êlectron ở lớp vỏ nguyên tử",
+        "c": "Chỉ xảy ra khi thỏa mãn các điều kiện nào đó",
+        "d": "Tuân theo định luật bảo toàn điện tích"
     },"96": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "3,8.10⁷ m/s ",
+        "b": "7,6.10⁷ m/s",
+        "c": "1,9.10⁷ m/s",
+        "d": "3,8.10⁶ m/s"
     },"97": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "⁶₃Li",
+        "b": "⁹₄Be",
+        "c": "¹⁰₅Bo",
+        "d": "¹⁴₆₇N"
     },"98": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "6,8.10¹¹ J",
+        "b": "2,7.10¹² J",
+        "c": "4,5.10¹¹ J",
+        "d": "8,5.10¹³ J"
     },"99": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "103 μg.",
+        "b": "0,31mg.",
+        "c": "0,13μg.",
+        "d": "1,3 mg."
     },"100": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "1",
+        "b": "2",
+        "c": "3/2",
+        "d": "2/3"
     }
     },
     { "0": "Biên độ của dao động cưỡng bức là biên độ của lực cưỡng bức.",
@@ -695,31 +695,31 @@
         "73": "0,32 µm",
         "74": "0,82°",
         "75": "7,5.10-⁴",
-        "76": "",
-        "77": "",
-        "78": "",
-        "79": "",
-        "80": "",
-        "81": "",
-        "82": "",
-        "83": "",
-        "84": "",
-        "85": "",
-        "86": "",
-        "87": "",
-        "88": "",
-        "89": "",
-        "90": "",
-        "91": "",
-        "92": "",
-        "93": "",
-        "94": "",
-        "95": "",
-        "96": "",
-        "97": "",
-        "98": "",
-        "99": "",
-        "100": ""
+        "76": "Bước sóng của ánh sáng càng lớn thì tính chất hạt của ánh sáng càn rõ.",
+        "77": "Tán sắc",
+        "78": "Bước sóng giới hạn ứng với hiện tượng quang điện ngoài thường lớn hơn đối với hiện tượng quang điện",
+        "79": "Trong hiện tượng quang điện ngoài, độ dẫn điện của khối kim loại tăng khi khối kim loại được chiếu bằng ánh sáng thích hợp.",
+        "80": "Hiện tượng phát xạ nhiệt điện từ",
+        "81": "Xảy ra khi bước sóng của ánh sáng kích thích nhỏ hơn hoặc bằng một bước sóng giới hạn nào đó.",
+        "82": "Hiện tượng quang điện",
+        "83": "Quang điện trở",
+        "84": "Photon ánh sáng không thể hiện tính chất sóng khi truyền trong chân không",
+        "85": "Vmax = V₁",
+        "86": "Tỉ lệ nghịch với n",
+        "87": "4,1.10⁶ m/s",
+        "88": "1/λ₃₁ = 1/λ₃₂ + 1/λ₂₁",
+        "89": "0,2 m.",
+        "90": "Không phụ thuộc vào các tác động bên ngoài",
+        "91": "Chỉ phát huy tác dụng trong phạm vi kích thích thức hạt nhân",
+        "92": "Bán kính như nhau",
+        "93": "Êlectron",
+        "94": "Số nuclôn",
+        "95": "Không liên quan đến có êlectron ở lớp vỏ nguyên tử",
+        "96": "7,6.10⁷ m/s",
+        "97": "⁹₄Be",
+        "98": "6,8.10¹¹ J",
+        "99": "103 μg.",
+        "100": "3/2"
 
     }
 ]
