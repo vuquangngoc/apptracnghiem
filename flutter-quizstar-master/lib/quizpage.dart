@@ -4,7 +4,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:quizstar/resultpage.dart';
-
+import 'package:auto_size_text/auto_size_text.dart';
 class getjson extends StatelessWidget {
   // accept the langname as a parameter
 
@@ -57,6 +57,7 @@ class getjson extends StatelessWidget {
 }
 
 class quizpage extends StatefulWidget {
+  // var mydata;
   final List mydata;
 
   quizpage({Key key, @required this.mydata}) : super(key: key);
@@ -99,7 +100,7 @@ class _quizpageState extends State<quizpage> {
       for (int i = 0; ;) {
       distinctIds.add(rand.nextInt(101));
         random_array = distinctIds.toSet().toList();
-        if(random_array.length < 10){
+        if(random_array.length < 20){   // số câu hỏi muốn có
           continue;
         }else{
           break;
@@ -162,7 +163,7 @@ class _quizpageState extends State<quizpage> {
     canceltimer = false;
     timer = 30;
     setState(() {
-      if (j < 10) {
+      if (j < 20) { // điều kiện để chọn số câu kết thúc ra điểm
         i = random_array[j];
         j++;
       } else {
@@ -207,7 +208,8 @@ class _quizpageState extends State<quizpage> {
     Timer(Duration(seconds: 2), nextquestion);
   }
 
-  Widget choicebutton(String k) {
+
+  Widget choicebutton(String k) {      // widget ô đáp án
     return Padding(
       padding: EdgeInsets.symmetric(
         vertical: 10.0,
@@ -215,15 +217,15 @@ class _quizpageState extends State<quizpage> {
       ),
       child: MaterialButton(
         onPressed: () => checkanswer(k),
-        child: Text(
+        child: AutoSizeText(
           mydata[1][i.toString()][k],
           style: TextStyle(
             color: Colors.white,
-            fontFamily: "Alike",
-            fontSize: 13.4,
+            fontFamily: "roboto",
+            fontSize: 16,
             // fontWeight: FontWeight.bold
           ),
-          maxLines: 1,
+          maxLines: 3,
         ),
         color: btncolor[k],
         splashColor: Colors.indigo[700],
@@ -238,13 +240,18 @@ class _quizpageState extends State<quizpage> {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setPreferredOrientations(
-        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
+
+    // SystemChrome.setPreferredOrientations(
+    //     [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]); // định hướng thiết bị hướng xuống và lên
+    // 2 dòng bỏ cũng đc
+
     return WillPopScope(
+
+      // pop up thông báo không cho back
       onWillPop: () {
-        return showDialog(
+        return showDialog(   //hiển thị hộp thoại
             context: context,
-            builder: (context) => AlertDialog(
+            builder: (context) => AlertDialog(   //AlertDialog : hộp thoại cảnh báo
                   title: Text(
                     "LƯU Ý:",
                   ),
@@ -261,23 +268,30 @@ class _quizpageState extends State<quizpage> {
                   ],
                 ));
       },
+
+
+
       child: Scaffold(
         body: Column(
           children: <Widget>[
+
             Expanded(
               flex: 4,
               child: Container(
                 padding: EdgeInsets.all(15.0),
                 alignment: Alignment.center,
+                color: Colors.blue[100],
                 child: Text(
                   mydata[0][i.toString()],
                   style: TextStyle(
-                    fontSize: 15,
-                    fontFamily: "Quando",
+                    fontSize: 17,
+                    fontFamily: "roboto",
                   ),
+                  maxLines: 100,
                 ),
               ),
             ),
+
             Expanded(
                 flex: 4,
                 child: AbsorbPointer(
@@ -300,6 +314,7 @@ class _quizpageState extends State<quizpage> {
               child: Container(
                 alignment: Alignment.topCenter,
                 child: Center(
+
                   child: Text(
                     showtimer,
                     style: TextStyle(

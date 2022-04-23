@@ -19,17 +19,17 @@ class _homepageState extends State<homepage> {
 
   List<String> des = [
     "Để tăng tốc khả năng tính toán , hãy chuẩn bị sẵn máy tính và giấy bút cùng một cái đầu lạnh.\nLưu ý: Mỗi câu hỏi chỉ có 30 giây nên hãy cố gắng !",
-    "Java has always been one of the best choices for Enterprise World. If you think you have learn the Language...\nJust Test Yourself !!",
-    "Javascript is one of the most Popular programming language supporting the Web.\nIt has a wide range of Libraries making it Very Powerful !",
-    "C++, being a statically typed programming language is very powerful and Fast.\nit's DMA feature makes it more useful. !",
-    "Linux is a OPEN SOURCE Operating System which powers many Servers and Workstation.\nIt is also a top Priority in Developement Work !",
+    "Vật lý là một môn học không khó mà cũng không dễ dàng\nHãy nắm chắc kiến thức trong đầu và máy tính CASIO trên tay để bước vào bài thi",
+    "Hóa học là môn học đòi hỏi tư duy cao và phản xạ nhanh, linh hoạt.\n Hãy chuẩn bị sẵn combo bảng tuần hoàn + máy tính + giấy nháp để sẵn sàng bước vào những câu hỏi đầu tiên nào!",
+    "Tiếng Anh là ngôn ngữ phổ biến nhất thế giới nên việc học Tiếng Anh là rất cần thiết cho tương lai mỗi người",
+    "Sinh học là môn học khá khó học với một số bạn nhưng nếu các bạn tìm hiểu và mầy mò học hỏi tìm tòi thì có thế các bạn sẽ yêu môn học này đó",
   ];
 
   Widget customcard(String langname, String image, String des){
-    return Padding(
+    return Padding(                //căn lề khoảng cách
       padding: EdgeInsets.symmetric(
-        vertical: 20.0,
-        horizontal: 30.0,
+        vertical: 20.0,             //căn lề trên dưới
+        horizontal: 30.0,            //căn lề hai bên
       ),
       child: InkWell(
         onTap: (){
@@ -42,25 +42,29 @@ class _homepageState extends State<homepage> {
         },
         child: Material(
           color: Colors.indigoAccent,
-          elevation: 10.0,
-          borderRadius: BorderRadius.circular(25.0),
+          elevation: 10.0,         //đổ bóng
+          borderRadius: BorderRadius.circular(25.0),    //bo cong viền
           child: Container(
             child: Column(
               children: <Widget>[
-                Padding(
+
+                // SizedBox(width: 20, height: 10),
+
+                Padding(                             //căn lề khoảng cách
                   padding: EdgeInsets.symmetric(
-                    vertical: 10.0,
+                    vertical: 10.0,                     //căn trên trên dưới
+                    // horizontal:             // căn 2 bên
                   ),
                   child: Material(
-                    elevation: 5.0,
-                    borderRadius: BorderRadius.circular(100.0),
+                    elevation: 15.0, //đổ bóng
+                    borderRadius: BorderRadius.circular(100.0),    //bo cong Material 100% THÀNH HÌNH TRÒN
                     child: Container(
                       // changing from 200 to 150 as to look better
-                      height: 150.0,
-                      width: 150.0,
+                      height: 150.0,   // chiều dài khung ảnh Material
+                      width: 150.0,     //chiều rộng khung Material
                       child: ClipOval(
                         child: Image(
-                          fit: BoxFit.cover,
+                          fit: BoxFit.cover,   // auto fit ảnh vừa
                           image: AssetImage(
                             image,
                           ),
@@ -89,7 +93,7 @@ class _homepageState extends State<homepage> {
                       color: Colors.white,
                       fontFamily: "Alike"
                     ),
-                    maxLines: 5,
+                    maxLines: 10,
                     textAlign: TextAlign.justify,
                   ),
                   
@@ -108,17 +112,60 @@ class _homepageState extends State<homepage> {
       DeviceOrientation.portraitDown, DeviceOrientation.portraitUp
     ]);
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "ÔN LUYỆN THI THPT QUỐC GIA",
-          style: TextStyle(
-            fontFamily: "Quando",
-            fontSize: 20
-          ),
+
+      // appBar: AppBar(
+      //   backgroundColor: Colors.deepOrange,
+      //
+      //   title: Text(
+      //     "ÔN LUYỆN THI THPT QUỐC GIA",
+      //     style: TextStyle(
+      //       fontFamily: "Quando",
+      //       fontSize: 20
+      //     ),
+      //   ),
+      // ),
+
+
+
+
+
+      // body: ListView(
+      //   children: <Widget>[
+
+        body: Center(
+         child: SingleChildScrollView(
+           padding: const EdgeInsets.all(8),
+           scrollDirection: Axis.vertical,
+    child: Column(
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    children: <Widget>[
+
+
+      // Image.asset('assets/logo.png', width: 200,height: 160),
+
+
+      SizedBox(width: 20, height: 40),
+      const Text(
+        "Cùng UTT ôn thi THPT quốc gia !!",
+        style: TextStyle(
+          fontSize: 45.0,
+          color: Colors.deepOrange,
+          fontFamily: "Satisfy",
         ),
+        textAlign: TextAlign.center,
       ),
-      body: ListView(
-        children: <Widget>[
+      SizedBox(width: 20, height: 20),
+      // const Text(
+      //   "Lưu ý: Mỗi lần thi sẽ bao gồm 20 câu hỏi, mỗi câu hỏi có 30 giây để chọn ứng với mỗi đáp án là 5 điểm, nếu hết thời gian thí sinh không chọn đáp án thì câu hỏi đó sẽ không tính điểm !",
+      //   style: TextStyle(
+      //     fontSize: 16,
+      //     // fontWeight: FontWeight.bold,
+      //     color: Colors.black,
+      //     fontFamily: "Roboto",
+      //   ),
+      //   textAlign: TextAlign.center,
+      // ),
+
           customcard("Toán học", images[0], des[0]),
           customcard("Vật lý", images[1], des[1]),
           customcard("Hóa học", images[2], des[2]),
@@ -126,6 +173,70 @@ class _homepageState extends State<homepage> {
           customcard("Sinh học", images[4], des[4]),
         ],
       ),
+    )),
+
+
+        // floatingActionButton: Row(
+        //     mainAxisAlignment: MainAxisAlignment.end,
+        //     children: [
+        //       FloatingActionButton(
+        //         onPressed: () => {},
+        //         child: Icon(Icons.navigate_before_rounded),
+        //         heroTag: "fab1",
+        //       ),
+        //       FloatingActionButton(
+        //         onPressed: () => {},
+        //         child: Icon(Icons.navigate_next_rounded),
+        //         heroTag: "fab2",
+        //       ),
+        //     ]
+        // )
+
+      floatingActionButton: FloatingActionButton(   // nút đứng im 1 góc
+      onPressed: (){
+        showAlertDialog(context);   //showAlertDialog chỉ là tên
+      },
+      tooltip: 'Increment', //có thể bỏ
+      child: const Icon(Icons.announcement_outlined),
+    ),
+
+    );
+  }
+
+
+
+  showAlertDialog(BuildContext context) {
+
+    // cài button
+    Widget okButton = TextButton(
+      child: Text("OK",
+      style: TextStyle(fontSize: 15),),
+      onPressed: () {
+        Navigator.of(context).pop();
+      },
+    );
+
+    // thiết kế AlertDialog - bảng thông báo
+    AlertDialog alert = AlertDialog(
+      title: Text("Lưu ý:"),
+      content: Text("Mỗi lần thi sẽ bao gồm 20 câu hỏi .\nMỗi câu hỏi có 30 giây để chọn ứng với mỗi đáp án là 5 điểm.\nNếu hết thời gian thí sinh không chọn đáp án thì câu hỏi đó sẽ không tính điểm !",
+        style: TextStyle(
+          fontSize: 17,
+          // fontWeight: FontWeight.bold,
+          color: Colors.black,
+          fontFamily: "Roboto",
+        ),),
+      actions: [
+        okButton,
+      ],
+    );
+
+    // show the dialog
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return alert;
+      },
     );
   }
 }

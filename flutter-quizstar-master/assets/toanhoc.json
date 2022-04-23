@@ -24,7 +24,7 @@
         "22": "Tìm m để hàm số y = -x³ + (2m + 1)x² - (m² - 3m +2)x - 4 có cực đại, cực tiểu nằm về hai phía so với trục tung",
         "23": "Tìm m để hàm số y = x³ - 3mx² + 12x - 2 nghịch biến trên khoảng (1; 4)",
         "24": "Đồ thị hàm số\n y = √(x² + x) - √(x² + 1)\ncó đường tiệm cận ngang có phương trình là",
-        "25": "Hệ số góc của tiếp tuyến của đồ thị hàm số\ny = (x-1) / (x+1)\ntại giao điểm của đồ thị hàm số với trục tung bằng",
+        "25": "Hệ số góc của tiếp tuyến của đồ thị hàm số\ny = (x-`ch1) / (x+1)\ntại giao điểm của đồ thị hàm số với trục tung bằng",
         "26": "Cho đồ thị hàm số y = x³ - 2x² + 2x . Gọi x1, x2 là hoành độ các điểm M, N trên (C) mà tại đó tiếp tuyến của (C) vuông góc với đường thẳng y = -x + 2016. Khi đó x1 + x2 bằng:",
         "27": "Cho hàm số y = x³ - 3x + 2 (C) . Tìm phương trình tiếp tuyến của (C), biết tiếp tuyến đi qua điểm A(-1; 0).",
         "28": "Tìm m để đồ thị hàm số y = x³ + 3x² + mx + 2m cắt đường thẳng y = -x + 2 tại 3 điểm.",
@@ -101,7 +101,8 @@
         "99": "Trong không gian Oxyz, cho đường thẳng d là giao tuyến của hai mặt phẳng (P): 2x + y + z + 5 = 0, (Q): 2x - z + 3 = 0 . Phương trình tham số đường thẳng d là:",
         "100": "Trong không gian Oxyz, khoảng cách từ M(6;2;8) đến trục Oy bằng:"
     },
-    {"0": {
+    {
+        "0": {
         "a": "Hàm số đồng biến trên các khoảng (-∞; 3) và (3; +∞) .",
         "b": "Hàm số luôn đồng biến trên R\\{3}",
         "c": "Hàm số nghịch biến trên các khoảng (-∞; 3) và (3; +∞)",
