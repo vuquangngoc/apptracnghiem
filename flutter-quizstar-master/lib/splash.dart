@@ -8,6 +8,7 @@ import 'package:flutter_launcher_icons/ios.dart';
 import 'package:flutter_launcher_icons/main.dart';
 import 'package:flutter_launcher_icons/utils.dart';
 import 'package:flutter_launcher_icons/xml_templates.dart';
+import 'package:device_preview/device_preview.dart';
 class splashscreen extends StatefulWidget {
   @override
   _splashscreenState createState() => _splashscreenState();

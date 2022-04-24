@@ -98,7 +98,7 @@ class _quizpageState extends State<quizpage> {
     var distinctIds = [];
     var rand = new Random();
       for (int i = 0; ;) {
-      distinctIds.add(rand.nextInt(101));
+      distinctIds.add(rand.nextInt(101)); //giới hạn số câu lấy random
         random_array = distinctIds.toSet().toList();
         if(random_array.length < 20){   // số câu hỏi muốn có
           continue;
@@ -273,14 +273,81 @@ class _quizpageState extends State<quizpage> {
 
       child: Scaffold(
         body: Column(
+
           children: <Widget>[
 
+//             Expanded(
+//               flex: 1,
+//               child: Container(
+//                 color: Colors.deepPurpleAccent,
+//                 alignment: Alignment.center,
+//                 child: Row(
+//                     crossAxisAlignment: CrossAxisAlignment.center,
+//
+//                   children: <Widget>[
+//                     new Align(
+//                       alignment: Alignment.topCenter,
+//                       child: Container(
+//                         padding: const EdgeInsets.symmetric(horizontal: 10.0),
+//                         child: Text(
+//                           showtimer,
+//                           style: TextStyle(
+//                             fontSize: 30.0,
+//                             fontWeight: FontWeight.w700,
+//                             fontFamily: 'Times New Roman',
+//                           ),
+//                         ),
+//                       ),
+//                     ),
+//                     // new Align(
+//                     //   alignment: Alignment.bottomLeft,
+//                     //   child: Container(
+//                     //     padding: const EdgeInsets.symmetric(horizontal: 10.0),
+//                     //     child:  Image.network(
+//                     //       'https://miro.medium.com/max/1000/1*65RydaEZ7uy5YPTg9cxV8Q.gif',
+//                     //       width: 300,
+//                     //       height: 400,
+//                     //       // fit: BoxFit.contain,
+//                     //     ),
+//                     //   ),
+//                     // ),
+//
+//                     // Text(
+//                     //   showtimer,
+//                     //   style: TextStyle(
+//                     //     fontSize: 30.0,
+//                     //     fontWeight: FontWeight.w700,
+//                     //     fontFamily: 'Times New Roman',
+//                     //   ),
+//                     // ),
+// ]
+//                 ),
+//               ),
+//             ),
+            Expanded(
+              flex: 1,
+              child: Container(
+                color: Colors.deepPurpleAccent,                alignment: Alignment.topCenter,
+                child: Center(
+                  child: Text(
+                    showtimer,
+                    style: TextStyle(
+                      fontSize: 40.0,
+                      fontWeight: FontWeight.w700,
+                      fontFamily: 'Times New Roman',
+                    ),
+                  ),
+
+
+                ),
+              ),
+            ),
             Expanded(
               flex: 4,
               child: Container(
                 padding: EdgeInsets.all(15.0),
                 alignment: Alignment.center,
-                color: Colors.blue[100],
+                color: Colors.yellowAccent[200],
                 child: Text(
                   mydata[0][i.toString()],
                   style: TextStyle(
@@ -291,10 +358,19 @@ class _quizpageState extends State<quizpage> {
                 ),
               ),
             ),
-
-            Expanded(
-                flex: 4,
+        // Container(
+        //   decoration: BoxDecoration(
+        //     image: DecorationImage(
+        //       image: NetworkImage(
+        //           "https://i.pinimg.com/originals/5b/4c/d2/5b4cd292f6f382ab8d8a51b9fcaad5ed.jpg"),
+        //       fit: BoxFit.fitWidth,
+        //     ),
+        //   ),
+        //   child:
+             Expanded(
+                flex: 5,
                 child: AbsorbPointer(
+
                   absorbing: disableAnswer,
                     child: Container(
                     child: Column(
@@ -304,28 +380,45 @@ class _quizpageState extends State<quizpage> {
                         choicebutton('b'),
                         choicebutton('c'),
                         choicebutton('d'),
+                        // Image.network(
+                        //   'https://miro.medium.com/max/1000/1*65RydaEZ7uy5YPTg9cxV8Q.gif',
+                        //   width: 80,
+                        //   height: 80,
+                        //   fit: BoxFit.contain,
+                        // )
+                        Image.asset('assets/2222.gif', width: 80,height: 80),
+
                       ],
                     ),
                   ),
                 ),
-              ),
-            Expanded(
-              flex: 1,
-              child: Container(
-                alignment: Alignment.topCenter,
-                child: Center(
+             // )
+      ),
 
-                  child: Text(
-                    showtimer,
-                    style: TextStyle(
-                      fontSize: 35.0,
-                      fontWeight: FontWeight.w700,
-                      fontFamily: 'Times New Roman',
-                    ),
-                  ),
-                ),
-              ),
-            ),
+
+            // Expanded(
+            //   flex: 1,
+            //   child: Container(
+            //     // color: Colors.deepPurpleAccent,                alignment: Alignment.topCenter,
+            //     child: Center(
+            //         // child: Text(
+            //         //   showtimer,
+            //         //   style: TextStyle(
+            //         //     fontSize: 30.0,
+            //         //     fontWeight: FontWeight.w700,
+            //         //     fontFamily: 'Times New Roman',
+            //         //   ),
+            //         // ),
+            //       child: Image.network(
+            //         'https://miro.medium.com/max/1000/1*65RydaEZ7uy5YPTg9cxV8Q.gif',
+            //         // width: 1000,
+            //         // height: 1000,
+            //         fit: BoxFit.contain,
+            //       )
+            //
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),

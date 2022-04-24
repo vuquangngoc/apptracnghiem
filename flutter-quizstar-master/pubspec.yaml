@@ -25,6 +25,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   marquee: ^2.2.1
   auto_size_text: ^3.0.0
+  device_preview: ^1.0.0
 
 
 dev_dependencies:

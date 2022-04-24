@@ -23,15 +23,15 @@ class _resultpageState extends State<resultpage> {
     if (marks < 40) {
       image = images[2];
       message =
-          "You Should Try Hard..\n" + "Điểm của bạn là $marks trên 100 điểm";
+          "Bạn nên cố gắng hơn\n" + "Điểm của bạn là $marks trên 100 điểm";
     } else if (marks < 70) {
       image = images[1];
       message =
-          "You Can Do Better..\n" + "Điểm của bạn là $marks trên 100 điểm";
+          "Bạn có thể làm tốt hơn\n" + "Điểm của bạn là $marks trên 100 điểm";
     } else {
       image = images[0];
       message =
-          "You Did Very Well..\n" + "Điểm của bạn là $marks trên 100 điểm";
+          "Kết quả của bạn thật xuất sắc\n" + "Điểm của bạn là $marks trên 100 điểm";
     }
     super.initState();
   }
@@ -43,14 +43,18 @@ class _resultpageState extends State<resultpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "Result",
+        // centerTitle: true,
+        title: Center(
+        child:Text(
+          "Kết quả",
+          // textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 30,fontFamily: "Satisfy",),
         ),
-      ),
+        ) ),
       body: Column(
         children: <Widget>[
           Expanded(
-            flex: 8,
+            flex: 10,
             child: Material(
               elevation: 10.0,
               child: Container(
@@ -69,6 +73,8 @@ class _resultpageState extends State<resultpage> {
                         ),
                       ),
                     ),
+                    SizedBox(width: 20, height: 50),
+
                     Padding(
                         padding: EdgeInsets.symmetric(
                           vertical: 5.0,
@@ -94,8 +100,9 @@ class _resultpageState extends State<resultpage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 OutlineButton(
+
                   onPressed: () {
-                    Future.delayed(Duration(seconds: 8),
+                    Future.delayed(Duration(seconds: 4),
                             () =>
                                 Navigator.of(context).pushReplacement(MaterialPageRoute(
                       builder: (context) => homepage(),
@@ -113,7 +120,8 @@ class _resultpageState extends State<resultpage> {
                         borderRadius: BorderRadius.circular(24),
                       ),
                       backgroundColor: Colors.blue,
-                    ); ScaffoldMessenger.of(context)
+                    );
+                    ScaffoldMessenger.of(context)
                         .showSnackBar(snackBar);
                   },
                   // child: Text(
@@ -122,13 +130,18 @@ class _resultpageState extends State<resultpage> {
                   //     fontSize: 18.0,
                   //   ),
                   // ),
-                  child: Icon(Icons.home),
+                  child: Icon(Icons.home,size: 40,),
                   padding: EdgeInsets.symmetric(
-                    vertical: 10.0,
-                    horizontal: 25.0,
+                    vertical: 5.0,
+                    horizontal: 35.0,
+
+
                   ),
                   borderSide: BorderSide(width: 3.0, color: Colors.indigo),
                   splashColor: Colors.indigoAccent,
+
+
+
                 )
               ],
             ),

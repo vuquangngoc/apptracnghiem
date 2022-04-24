@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:quizstar/quizpage.dart';
-
+import 'package:device_preview/device_preview.dart';
 class homepage extends StatefulWidget {
   @override
   _homepageState createState() => _homepageState();
@@ -42,18 +42,19 @@ class _homepageState extends State<homepage> {
         },
         child: Material(
           color: Colors.indigoAccent,
-          elevation: 10.0,         //đổ bóng
-          borderRadius: BorderRadius.circular(25.0),    //bo cong viền
+          elevation: 50.0,         //đổ bóng
+          borderRadius: BorderRadius.circular(50.0),    //bo cong viền
           child: Container(
             child: Column(
               children: <Widget>[
 
-                // SizedBox(width: 20, height: 10),
+                SizedBox(width: 20, height: 10),
 
                 Padding(                             //căn lề khoảng cách
                   padding: EdgeInsets.symmetric(
                     vertical: 10.0,                     //căn trên trên dưới
                     // horizontal:             // căn 2 bên
+
                   ),
                   child: Material(
                     elevation: 15.0, //đổ bóng
@@ -132,7 +133,14 @@ class _homepageState extends State<homepage> {
       // body: ListView(
       //   children: <Widget>[
 
-        body: Center(
+        body: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/nen.png'),
+                fit: BoxFit.cover,
+              ),
+            ),
+
          child: SingleChildScrollView(
            padding: const EdgeInsets.all(8),
            scrollDirection: Axis.vertical,
@@ -148,9 +156,10 @@ class _homepageState extends State<homepage> {
       const Text(
         "Cùng UTT ôn thi THPT quốc gia !!",
         style: TextStyle(
-          fontSize: 45.0,
+          fontSize: 49.0,
           color: Colors.deepOrange,
           fontFamily: "Satisfy",
+          fontWeight: FontWeight.bold
         ),
         textAlign: TextAlign.center,
       ),
@@ -171,6 +180,16 @@ class _homepageState extends State<homepage> {
           customcard("Hóa học", images[2], des[2]),
           customcard("Tiếng Anh", images[3], des[3]),
           customcard("Sinh học", images[4], des[4]),
+      // const Text(
+      //   "Nếu bạn có thắc mắc hay bất kỳ câu hỏi gì về ứng dụng hãy liên hệ đến số điện thoại 0904892301 để được tiếp nhận đóng góp phát triển ứng dụng",
+      //   style: TextStyle(
+      //       fontSize: 17.0,
+      //       color: Colors.black87,
+      //       fontFamily: "quando",
+      //       fontWeight: FontWeight.bold
+      //   ),
+      //   textAlign: TextAlign.center,
+      // ),
         ],
       ),
     )),
@@ -192,12 +211,14 @@ class _homepageState extends State<homepage> {
         //     ]
         // )
 
-      floatingActionButton: FloatingActionButton(   // nút đứng im 1 góc
+      floatingActionButton: FloatingActionButton(
+        // backgroundColor: Colors.orange,
+        // nút đứng im 1 góc
       onPressed: (){
         showAlertDialog(context);   //showAlertDialog chỉ là tên
       },
       tooltip: 'Increment', //có thể bỏ
-      child: const Icon(Icons.announcement_outlined),
+      child: const Icon(Icons.announcement_outlined,),
     ),
 
     );
@@ -229,6 +250,7 @@ class _homepageState extends State<homepage> {
       actions: [
         okButton,
       ],
+
     );
 
     // show the dialog
